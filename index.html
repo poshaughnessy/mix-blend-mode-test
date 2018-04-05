@@ -12,10 +12,11 @@
         background-image: url(640px-Jordi_cat_portrait.jpg);
       }
       .test {
-        padding-top: 200px;
+        color: #fff;
+        padding-top: 100px;
         text-align: center;
         mix-blend-mode: exclusion;
-        font-size: 2em;
+        font-size: 5em;
       }
     </style>
   </head>
@@ -23,6 +24,14 @@
     
     <p>The text ("Hello?") below should appear excluded from the background image...</p>
   
+    <div class="background">
+      <div class="test">
+        <p>Hello?</p>
+      </div>
+    </div>
+
+    <p>NB. This text is not showing up in either Chrome for Android or Samsung Internet. It seems that `mix-blend-mode` needs to be applied on a container, not the text element itself.</p>
+
     <div class="background">
       <p class="test">Hello?</p>
     </div>
