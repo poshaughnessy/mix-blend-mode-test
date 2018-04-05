@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>mix-blend-mode test</title>
+    <style>
+      body {
+        background-color: #fff;
+      }
+      .background {
+        background-image: url(640px-Jordi_cat_portrait.jpg);
+      }
+      .test {
+        mix-blend-mode: exclusion;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <p>The text ("Hello?") below should appear excluded from the background image...</p>
+  
+    <div class="background">
+      <p class="test">Hello?</p>
+    </div>
+    
+  </body>
+</html>
+    
